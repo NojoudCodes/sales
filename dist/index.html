@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sale | Admin Template</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+    <body class="box-border font-poppins bg-body text-base font-normal">
+        <section class="flex">
+            <nav class="fixed flex flex-col justify-between w-56 h-full bg-white p-4">
+                <div class="flex flex-col justify-between gap-14">
+                    <a href="#">
+                        <img src="./images/navbar/Logo.png" alt="Logo" class="w-20">
+                    </a>
+                    <ul class="flex flex-col justify-between gap-5 ps-2">
+                        <li class="flex items-center gap-2">
+                            <img src="./images/navbar/Group 34633.png" alt="icon" class="w-5">
+                            <a href="#" class="active font-light text-primary capitalize">dashboard</a>
+                        </li>
+                        <li class="flex items-center gap-2">
+                            <img src="./images/navbar/clipboard-tick.png" alt="icon" class="w-5">
+                            <a href="#" class="font-light text-gray-700 capitalize">lab test</a>
+                        </li>
+                        <li class="flex items-center gap-2">
+                            <img src="./images/navbar/bag-tick-2.png" alt="icon" class="w-5">
+                            <a href="#" class="font-light text-gray-700 capitalize">medicine order</a>
+                        </li>
+                        <li class="flex items-center gap-2">
+                            <img src="./images/navbar/sms.png" alt="icon" class="w-5">
+                            <a href="#" class="font-light text-gray-700 text-md capitalize">message</a>
+                        </li>
+                        <li class="flex items-center gap-2">
+                            <img src="./images/navbar/empty-wallet.png" alt="icon" class="w-5">
+                            <a href="#" class="font-light text-gray-700 text-md capitalize">payment</a>
+                        </li>
+                        <li class="flex items-center gap-2">
+                            <img src="./images/navbar/setting-2.png" alt="icon" class="w-5">
+                            <a href="#" class="font-light text-gray-700 capitalize">settings</a>
+                        </li>
+                    </ul>
+                </div>
+                <ul class="ps-4">
+                    <li class="flex items-center gap-2">
+                        <img src="./images/navbar/Question.png" alt="icon" class="w-5">
+                        <a href="#" class="font-light text-gray-700 capitalize">help</a>
+                    </li>
+                </ul>
+            </nav>
+            <main class="flex flex-col justify-evenly gap-10 w-full mx-8 pt-5">
+                <div class="flex justify-between items-center h-14">
+                    <form class="relative">
+                        <img src="./images/profile/search-normal.png" alt="search icon" class="absolute top-2.5 left-2 w-3 h-3">
+                        <input type="search" name="search" id="search" class="border border-dark60 bg-white text-xs w-96 h-8 ps-6" placeholder="Search">
+                    </form>
+                    <div class="flex items-center gap-4">
+                        <div class="relative flex justify-center items-center bg-white w-12 h-12">
+                            <span class="absolute -top-0.5 -right-0.5 bg-secondary w-2.5 h-2.5 rounded-full"></span>
+                            <img src="./images/profile/notification-bing.png" alt="notification icon" class="w-6">
+                        </div>
+                        <div>
+                            <img src="./images/profile/Profile Avtar.png" alt="Profile image" class="w-12">
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <h2 class="font-medium text-black text-2xl mb-4">sales information</h2>
+                    <form class="flex justify-between">
+                        <div class="flex flex-col">
+                            <label for="customer">Customer</label>
+                            <input type="text" id="customer" placeholder="enter customer name" class="w-64 text-xs mt-3 py-3 px-5 border border-dark60 rounded-2 capitalize">
+                        </div>
+                        <div class="flex flex-col">
+                            <label for="invoice-id">Invoice ID</label>
+                            <input type="text" id="invoice-id" placeholder="enter invoice ID" class="w-64 text-xs mt-3 py-3 px-5 border border-dark60 rounded-2 capitalize">
+                        </div>
+                        <div class="flex flex-col">
+                            <label for="startDate">Start Date</label>
+                            <input type="text" id="startDate" placeholder="start date" class="w-64 text-xs mt-3 py-3 px-5 border border-dark60 rounded-2 capitalize">
+                        </div>
+                        <div class="flex flex-col">
+                            <label for="endDate">End date</label>
+                            <input type="text" id="endDate" placeholder="end date" class="w-64 text-xs mt-3 py-3 px-5 border border-dark60 rounded-2 capitalize">
+                        </div>
+                    </form>
+                </div>
+                <div class="bg-white p-5">
+                    <table class="table-auto w-full border-collapse">
+                        <thead class="text-left">
+                            <tr style="border-bottom: 1px solid #F2F2F2;">
+                                <th class="px-4 py-3">
+                                    <input type="checkbox" name="checkbox"  class="border border-light">
+                                </th>
+                                <th class="px-4 py-3">Invoice ID</th>
+                                <th class="px-4 py-3">Date</th>
+                                <th class="px-4 py-3">Customer</th>
+                                <th class="px-4 py-3">Payable Amount</th>
+                                <th class="px-4 py-3">Paid Amount</th>
+                                <th class="px-4 py-3">Due</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr style="border-bottom: 1px solid #F2F2F2;color: rgba(19, 19, 19, 0.6)">
+                                <td class="px-4 py-3">
+                                    <input type="checkbox" name="checkbox" >
+                                </td>
+                                <td class="px-4 py-3 text-primary uppercase">#ahga68</td>
+                                <td class="px-4 py-3 text-base">23/09/2022</td>
+                                <td class="px-4 py-3 text-base">Jacob Marucs</td>
+                                <td class="px-4 py-3 text-base">$100</td>
+                                <td class="px-4 py-3 text-base">$100</td>
+                                <td class="px-4 py-3 text-base">$100</td>
+                            </tr>
+                            <tr style="border-bottom: 1px solid #F2F2F2;color: rgba(19, 19, 19, 0.6)">
+                                <td class="px-4 py-3">
+                                    <input type="checkbox" name="checkbox" >
+                                </td>
+                                <td class="px-4 py-3 text-primary uppercase">#ahga68</td>
+                                <td class="px-4 py-3 text-base">23/09/2022</td>
+                                <td class="px-4 py-3 text-base">Jacob Marucs</td>
+                                <td class="px-4 py-3 text-base">$100</td>
+                                <td class="px-4 py-3 text-base">$100</td>
+                                <td class="px-4 py-3 text-base">$100</td>
+                            </tr>
+                            <tr style="border-bottom: 1px solid #F2F2F2;color: rgba(19, 19, 19, 0.6)">
+                                <td class="px-4 py-3">
+                                    <input type="checkbox" name="checkbox" >
+                                </td>
+                                <td class="px-4 py-3 text-primary uppercase">#ahga68</td>
+                                <td class="px-4 py-3 text-base">23/09/2022</td>
+                                <td class="px-4 py-3 text-base">Jacob Marucs</td>
+                                <td class="px-4 py-3 text-base">$100</td>
+                                <td class="px-4 py-3 text-base">$100</td>
+                                <td class="px-4 py-3 text-base">$100</td>
+                            </tr>
+                            <tr style="border-bottom: 1px solid #F2F2F2;color: rgba(19, 19, 19, 0.6)">
+                                <td class="px-4 py-3">
+                                    <input type="checkbox" name="checkbox" >
+                                </td>
+                                <td class="px-4 py-3 text-primary uppercase">#ahga68</td>
+                                <td class="px-4 py-3 text-base">23/09/2022</td>
+                                <td class="px-4 py-3 text-base">Jacob Marucs</td>
+                                <td class="px-4 py-3 text-base">$100</td>
+                                <td class="px-4 py-3 text-base">$100</td>
+                                <td class="px-4 py-3 text-base">$100</td>
+                            </tr>
+                            <tr style="border-bottom: 1px solid #F2F2F2;color: rgba(19, 19, 19, 0.6)">
+                                <td class="px-4 py-3">
+                                    <input type="checkbox" name="checkbox" >
+                                </td>
+                                <td class="px-4 py-3 text-primary uppercase">#ahga68</td>
+                                <td class="px-4 py-3 text-base">23/09/2022</td>
+                                <td class="px-4 py-3 text-base">Jacob Marucs</td>
+                                <td class="px-4 py-3 text-base">$100</td>
+                                <td class="px-4 py-3 text-base">$100</td>
+                                <td class="px-4 py-3 text-base">$100</td>
+                            </tr>
+                            <tr style="border-bottom: 1px solid #F2F2F2;color: rgba(19, 19, 19, 0.6)">
+                                <td class="px-4 py-3">
+                                    <input type="checkbox" name="checkbox" >
+                                </td>
+                                <td class="px-4 py-3 text-primary uppercase">#ahga68</td>
+                                <td class="px-4 py-3 text-base">23/09/2022</td>
+                                <td class="px-4 py-3 text-base">Jacob Marucs</td>
+                                <td class="px-4 py-3 text-base">$100</td>
+                                <td class="px-4 py-3 text-base">$100</td>
+                                <td class="px-4 py-3 text-base">$100</td>
+                            </tr>
+                            <tr style="border-bottom: 1px solid #F2F2F2;color: rgba(19, 19, 19, 0.6)">
+                                <td class="px-4 py-3">
+                                    <input type="checkbox" name="checkbox" >
+                                </td>
+                                <td class="px-4 py-3 text-primary uppercase">#ahga68</td>
+                                <td class="px-4 py-3 text-base">23/09/2022</td>
+                                <td class="px-4 py-3 text-base">Jacob Marucs</td>
+                                <td class="px-4 py-3 text-base">$100</td>
+                                <td class="px-4 py-3 text-base">$100</td>
+                                <td class="px-4 py-3 text-base">$100</td>
+                            </tr>
+                            <tr style="border-bottom: 1px solid #F2F2F2;color: rgba(19, 19, 19, 0.6)">
+                                <td class="px-4 py-3">
+                                    <input type="checkbox" name="checkbox" >
+                                </td>
+                                <td class="px-4 py-3 text-primary uppercase">#ahga68</td>
+                                <td class="px-4 py-3 text-base">23/09/2022</td>
+                                <td class="px-4 py-3 text-base">Jacob Marucs</td>
+                                <td class="px-4 py-3 text-base">$100</td>
+                                <td class="px-4 py-3 text-base">$100</td>
+                                <td class="px-4 py-3 text-base">$100</td>
+                            </tr>
+                            <tr style="border-bottom: 1px solid #F2F2F2;color: rgba(19, 19, 19, 0.6)">
+                                <td class="px-4 py-3">
+                                    <input type="checkbox" name="checkbox" >
+                                </td>
+                                <td class="px-4 py-3 text-primary uppercase">#ahga68</td>
+                                <td class="px-4 py-3 text-base">23/09/2022</td>
+                                <td class="px-4 py-3 text-base">Jacob Marucs</td>
+                                <td class="px-4 py-3 text-base">$100</td>
+                                <td class="px-4 py-3 text-base">$100</td>
+                                <td class="px-4 py-3 text-base">$100</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </main>
+        </section>
+    </body>
+</html>
